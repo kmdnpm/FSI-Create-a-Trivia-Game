@@ -3,10 +3,10 @@ let restartGame = true;
 let userName = window.prompt('Please enter your name:');
 
 
+beginGame();
 
-while (restartGame === true){
+while (continueGame(restartGame) === true){
     beginGame();
-    continueGame(restartGame);
 }
 window.alert('Thanks for playing!');
 
